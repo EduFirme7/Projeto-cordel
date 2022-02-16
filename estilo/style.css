@@ -1,0 +1,101 @@
+@charset "UTF-8";    
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+
+:root{
+    --font-padrao:  Verdana, Geneva, Tahoma, sans-serif;
+    --font-titulos: 'MuseoModerno', cursive;
+    --font-paragrafos: 'Modern Antiqua', cursive;
+    --font-titulos2: 'Sriracha', cursive;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+   background-color: black;
+   color: white;
+   text-align: center;
+   
+}
+header > h1{
+    font-family: var(--font-titulos2);
+    font-variant: small-caps;   
+    padding-top: 50px;
+    font-size: 8vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+section {
+    font-family: var(--font-paragrafos);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 2.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;   
+}
+
+section.normal{
+    background-color: aliceblue;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 50, 50);
+    background-size: cover;
+    color: white;
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.678);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.418);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-position: right center;
+}
+
+header a, footer a {
+    color: rgb(221, 73, 73);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
